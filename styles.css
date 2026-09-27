@@ -217,17 +217,17 @@ em { font-family: var(--f-serif); font-style: italic; font-weight: 400; letter-s
   border-block: 1px solid var(--line);
 }
 .rb-item {
-  display: inline-flex; align-items: center; gap: 14px; margin-right: 16px; padding: 8px 22px 8px 8px; white-space: nowrap;
-  font-family: var(--f-display); font-weight: 700; letter-spacing: -.02em; font-size: clamp(18px, 2.2vw, 26px); color: var(--navy-900);
-  border-radius: 999px;
-  background: linear-gradient(135deg, var(--gold-hi), var(--gold) 55%, var(--gold-lo));
-  box-shadow: 0 10px 26px -12px rgba(201,163,95,.6), inset 0 1px 0 rgba(255,255,255,.45);
+  display: inline-flex; align-items: center; gap: 12px; margin-right: 14px; padding: 6px 20px 6px 6px; white-space: nowrap;
+  font-family: var(--f-display); font-weight: 500; letter-spacing: -.01em; font-size: clamp(16px, 1.8vw, 21px); color: var(--cream-70);
+  border-radius: 999px; background: rgba(245,241,230,.03); border: 1px solid rgba(201,163,95,.28);
+  transition: color .3s, border-color .3s;
 }
-.rb-item svg { width: 42px; height: 42px; padding: 10px; border-radius: 50%; background: var(--navy-900); fill: none; stroke: var(--gold-hi); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.rb-item:hover { color: var(--cream); border-color: rgba(201,163,95,.6); }
+.rb-item svg { width: 36px; height: 36px; padding: 9px; border-radius: 50%; background: rgba(201,163,95,.1); fill: none; stroke: var(--gold); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; flex: none; }
 .ribbons::before, .ribbons::after { content: ''; position: absolute; top: 0; bottom: 0; width: 10%; z-index: 3; pointer-events: none; }
 .ribbons::before { left: 0; background: linear-gradient(90deg, var(--navy-900), transparent); }
 .ribbons::after { right: 0; background: linear-gradient(-90deg, var(--navy-900), transparent); }
-@media (max-width: 640px) { .rb-item svg { width: 36px; height: 36px; padding: 8px; } .ribbon-gold { padding: 12px 0; } }
+@media (max-width: 640px) { .rb-item svg { width: 32px; height: 32px; padding: 8px; } .ribbon-gold { padding: 12px 0; } }
 
 /* ================= SECTIONS ================= */
 .section { position: relative; padding: clamp(80px, 12vw, 150px) var(--pad); max-width: 1320px; margin: 0 auto; }
